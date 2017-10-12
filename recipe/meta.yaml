@@ -39,12 +39,10 @@ requirements:
     - {{posix}}automake
     - {{posix}}pkg-config
     - {{posix}}make
-    - unixodbc                   # [unix]
 
   run:
     - r-base
     - {{native}}gcc-libs         # [win]
-    - unixodbc                   # [unix]
 
 test:
   commands:
