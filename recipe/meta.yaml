@@ -40,12 +40,12 @@ requirements:
     - {{posix}}automake          # [not win]
     - {{posix}}pkg-config
     - {{posix}}make
-    - {{native}}unixodbc
+    - {{native}}unixodbc         # [not win]
 
   run:
     - r-base
     - {{native}}gcc-libs         # [win]
-    - {{native}}unixodbc
+    - {{native}}unixodbc         # [not win]
 
 test:
   commands:
